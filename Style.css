@@ -1,0 +1,30 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.love::after {
+    content: '❤️ Te Amo';
+    font-size: 5vw; /* Tamaño adaptable al ancho de pantalla */
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: block;
+}
+
+/* Ajustes móviles */
+@media (max-width: 600px) {
+    .love::after {
+        font-size: 8vw; /* Más grande en pantallas pequeñas */
+    }
+}
